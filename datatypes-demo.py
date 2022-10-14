@@ -1,3 +1,4 @@
+import sys
 """
 
 This script is used to demonstrate the various data types of python
@@ -22,5 +23,8 @@ how to read as commandLine arguments
 #x = input('Enter  Data')
 #print(x);
 #x,y = input('Enter two Data elements').split();
-x,y =[int(a) for  a in input('Enter two Numbers').split()]
-print("{} + {} = {} ".format(x,y,(x+y)))
+#x,y =[int(a) for  a in input('Enter two Numbers').split()]
+#print("{} + {} = {} ".format(x,y,(x+y)))
+
+arguments = sys.argv
+print(len(arguments))
